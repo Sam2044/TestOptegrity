@@ -34,6 +34,7 @@
                         @*<img src="../../Content/images/Logout.png" loading="lazy" width="35" alt="" class="image">*@
                         @using (Html.BeginForm("LogOff", "Account", FormMethod.Post))
                         {
+                            @Html.AntiForgeryToken()
                             <a href="javascript:;" onclick="document.forms[0].submit();">
                                 <img src="../../Content/images/Logout.png" loading="lazy" width="35" alt="" class="image">
                             </a>
