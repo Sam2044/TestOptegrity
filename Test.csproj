@@ -170,9 +170,15 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\WelcomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104102029072_InitialMigration.cs" />
+    <Compile Include="Migrations\202104102029072_InitialMigration.Designer.cs">
+      <DependentUpon>202104102029072_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -184,12 +190,27 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\Logo.png" />
+    <Content Include="Content\images\Logout.png" />
+    <Content Include="Content\images\philippe-gras-WIHa4vSUKow-unsplash-min-p-1080.jpeg" />
+    <Content Include="Content\images\philippe-gras-WIHa4vSUKow-unsplash-min-p-1600.jpeg" />
+    <Content Include="Content\images\philippe-gras-WIHa4vSUKow-unsplash-min-p-2000.jpeg" />
+    <Content Include="Content\images\philippe-gras-WIHa4vSUKow-unsplash-min-p-2600.jpeg" />
+    <Content Include="Content\images\philippe-gras-WIHa4vSUKow-unsplash-min-p-3200.jpeg" />
+    <Content Include="Content\images\philippe-gras-WIHa4vSUKow-unsplash-min-p-500.jpeg" />
+    <Content Include="Content\images\philippe-gras-WIHa4vSUKow-unsplash-min.jpg" />
+    <Content Include="Content\images\webclip.png" />
+    <Content Include="Content\wcss\normalize.css" />
+    <Content Include="Content\wcss\test-b75982.webflow.css" />
+    <Content Include="Content\wcss\webflow.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\consolai.ttf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -201,6 +222,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\webflow.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -235,6 +257,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Welcome\Welcome.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -251,6 +274,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202104102029072_InitialMigration.resx">
+      <DependentUpon>202104102029072_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
